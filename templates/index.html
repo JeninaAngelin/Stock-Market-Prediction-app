@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Price Prediction</title>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <h1 style="color: white;">Stock Price Prediction</h1>    
+    <form method="post">
+        <label for="datetime">Datetime (YYYY-MM-DD):</label>
+        <input type="text" placeholder="yyyy-mm-dd" id="datetime" name="datetime" required><br><br>
+
+        <label for="stock_name">Stock Name:</label>
+        <input type="text" placeholder="XPEV/TSLA/F/NIO" id="stock_name" name="stock_name" required><br><br>
+
+        <input id="predict_button" type="submit" value="Predict">
+    </form>
+    <style>
+        #predict_button {
+            color: #007bff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: rgba(0, 123, 255, 0.2);
+        }
+
+        #predict_button:hover {
+            background-color: rgba(2, 15, 30, 0.4);
+        }</style>
+</body>
+</html>
 
