@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Price Prediction Result</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='bkg.png') }}");
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: rgba(0, 123, 255, 0.2);
+        }
+
+        a:hover {
+            background-color: rgba(0, 123, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <h1>Stock Price Prediction Result</h1>
+    {% if error_message %}
+        <p style="color: red;">{{ error_message }}</p>
+        {% else %}
+        <p>Predicted closing price for {{ stock_name }} on {{ datetime_str }}: ${{ predicted_price|float % 10000000000 }}</p>
+        {% endif %}
+    <!-- <p>Predicted closing price for {{ stock_name }} on {{ datetime_str }}: ${{ predicted_price }}</p> -->
+    <a href="/">Back to Prediction</a>
+</body>
+</html>
