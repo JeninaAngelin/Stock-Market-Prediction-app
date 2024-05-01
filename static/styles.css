@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bkg.png'); /* Add your image path here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Center container horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* More transparent white background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.636); /* More transparent form background */
+    padding: 40px; /* Adjust padding to 40px from all sides */
+    border-radius: 8px;
+    max-width: 600px; /* Set maximum width */
+    margin: auto; /* Center the form horizontally */
+    text-align: center; /* Center-align text content */
+}
+
+label, p {
+    text-align: center; /* Center-align headings, labels, and paragraphs */
+}
+
+input[type="text"], select, button {
+    display: block;
+    margin: 15px auto; /* Center-align form elements */
+}
+
+
+h1 {
+    color: #333;
+    text-align: center; /* Center align title */
+    font-weight: bold; /* Make title bold */
+    font-size: 2.5em; /* Increase font size */
+    margin-bottom: 30px; /* Add margin at the bottom */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em; /* Increase font size */
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8); /* More transparent input background */
+    font-size: 1em; /* Adjust font size */
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em; /* Adjust font size */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    font-size: 1.2em; /* Adjust font size */
+}
